@@ -28,25 +28,16 @@
                                     </th>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr *ngFor="let pat of patient">
+                                        <td>{{pat.id}}</td>
+                                        <td>{{pat.name}}</td>
+                                        <td>{{pat.address}}</td>
+                                        <td>{{pat .mobile}}</td>
+                                        <td>{{pat.age}}</td>
+                                        
                                         <td>
-                                            1
-                                        </td>
-                                        <td>
-                                            Dakota Rice
-                                        </td>
-                                        <td>
-                                            Niger
-                                        </td>
-                                        <td>
-                                            Oud-Turnhout
-                                        </td>
-                                        <td class="text-primary">
-                                            $36,738
-                                        </td>
-                                    </tr>
-                                    
-                                </tbody>
+                                          <button class="btn btn-success offset-2" type="button" > view</button>
+                                        </td>                                </tbody>
                             </table>
                         </div>
                     </div>

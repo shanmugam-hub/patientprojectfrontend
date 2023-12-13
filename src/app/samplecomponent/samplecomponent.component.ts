@@ -9,15 +9,15 @@ import { Patient } from '../util/Patient';
 })
 export class SamplecomponentComponent {
 
-  public patient :Patient;
+  public patient :any;
   constructor(private dentalService:DentalserviveService) {
     this.patient = new Patient();
    }
 
   ngOnInit() {
     this.dentalService.fetchalllist()
-      .subscribe((body: any) => {
-        this.patient = body;
+      .subscribe((data: any) => {
+        this.patient = data.body;
         console.log(this.patient);
 
       }, (error:void) => {
