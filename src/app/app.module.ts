@@ -7,12 +7,14 @@ import { DentalserviveService } from './service/dentalservive.service';
 import { TableListComponent } from './table-list/table-list.component';
 import { SamplecomponentComponent } from './samplecomponent/samplecomponent.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NewpatientComponent } from './newpatient/newpatient.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TableListComponent,
-    SamplecomponentComponent
+    SamplecomponentComponent,
+    NewpatientComponent
   ],
   imports: [
     BrowserModule,
