@@ -20,7 +20,7 @@ export class DentalserviveService {
 
   private handleError(error:any){
     if(error.status==0){
-    alert('An error occurred: '+"Connection Refused");
+    //alert('An error occurred: '+"Connection Refused");
   } else {
 
     if(error.error.hasOwnProperty('message')){
